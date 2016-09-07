@@ -1,8 +1,16 @@
-<h3>Informe os coeficientes...</h3>
-<br>
+
+<!--br-->
 <table>
 <%= form_tag '', method: :get do %>
   <!-- Formulário Filtro -->
+<tr>
+<td width="150px"></td>
+<td><img src="http://www.intmath.com/cgi-bin/mathtex.cgi?ax^2+bx+c=0" width="150" height="20" alt="ax^2+bx+c=0" title="ax^2+bx+c=0" style="vertical-align:0px">
+</td>
+</tr>
+<tr>
+<td colspan="2"><strong>Informe os coeficientes:</strong></td>
+</tr>
 <tr>
 <td>Coeficiente a: </td>
 <td> <%= text_field_tag :a %></td>
@@ -16,8 +24,9 @@
 <td> <%= text_field_tag :c %></td>
 </tr>
 <tr height="45">
-<td width="100px"></td>
+<td width="150px"></td>
 <td> <input type="submit" name="commit" value="Calcular" class="pure-button pure-button-primary" data-disable-with="calcular" /></td>
+
 
 <script>
   document.getElementById("a").value = 1;
@@ -29,10 +38,23 @@
 </table>
 
 <% if @a != nil %>
-<h2>
-  <!-- Monta e exibe a Equação do 2o Grau -->
-  (<%= @a %>)x<sup>2</sup>+(<%= @b %>)x+(<%= @c %>)=0
-</h2>
+
+<table>
+<tr>
+<td width="180px"><strong>Resolvendo...</strong></td>
+<td><img src="http://www.intmath.com/cgi-bin/mathtex.cgi?(<%= @a %>)x^2+(<%= @b %>)x+(<%= @c %>)=0" width="150" height="20" alt="ax^2+bx+c=0" title="ax^2+bx+c=0" style="vertical-align:0px">
+</td>
+</tr>
+<tr>
+<td colspan="2"><strong>Aplicando bhaskara...</strong></td>
+</tr>
+<tr>
+<td><img src="http://www.intmath.com/cgi-bin/mathtex.cgi?x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" width="160" height="37" alt="x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" title="x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" style="vertical-align:0px">
+</td>
+</tr>
+<br>
+</table>
+<img src="http://www.intmath.com/cgi-bin/mathtex.cgi?x=\frac{-(<%= @b %>)\pm\sqrt{(<%= @b %>)^2-4(<%= @a %>)(<%= @c %>)}}{2(<%= @a %>)}" width="250" height="37" alt="x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" title="x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" style="vertical-align:0px">
 
 <% if @a != nil && @a != "0" && @a != ""  %>
 <table border="0" style="width: 500px">
