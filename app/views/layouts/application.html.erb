@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bhaskara</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">    
+
+    <%# *************************************** %>
+    <%# javascript for "estoques/edit" view ... %>
+    <%# *************************************** %>
+    <% if (controller_name=='bhaskara' && action_name=='index') %>
+       <script src="bhaskara.index.js"></script>
+    <% end %>
+
+    <table>
+    <tr>
+    <td><%= image_tag 'dolphins.png', :class => 'logo' %>
+    <td width="120px"></td>
+    <td><strong><h1 class="h1Class"">Resolvendo equações do 2o Grau ... </h1></strong><h6 align="left"><i>por Ludenir Santos</i></h6><h3><i>Os coeficientes a, b, c são números reais ou complexos (a+bi ou a-bi).</i></h3></td></td>
+    <!--hr class="hrEspessura"-->
+    </tr>
+    </table>
+    
+    <hr class="hrEspessura"></td>
+
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+  
+</html>

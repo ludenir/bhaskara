@@ -1,0 +1,53 @@
+<h3>Informe os coeficientes...</h3>
+<br>
+<table>
+<%= form_tag '', method: :get do %>
+  <!-- Formulário Filtro -->
+<tr>
+<td>Coeficiente a: </td>
+<td> <%= text_field_tag :a %></td>
+</tr>
+<tr>
+<td>Coeficiente b: </td>
+<td> <%= text_field_tag :b %></td>
+</tr>
+<tr>
+<td>Coeficiente c: </td>
+<td> <%= text_field_tag :c %></td>
+</tr>
+<tr height="45">
+<td width="100px"></td>
+<td> <input type="submit" name="commit" value="Calcular" class="pure-button pure-button-primary" data-disable-with="calcular" /></td>
+
+<script>
+  document.getElementById("a").value = 1;
+  document.getElementById("b").focus();
+</script>
+
+<% end %>
+</tr>
+</table>
+
+<% if @a != nil %>
+<h2>
+  <!-- Monta e exibe a Equação do 2o Grau -->
+  (<%= @a %>)x<sup>2</sup>+(<%= @b %>)x+(<%= @c %>)=0
+</h2>
+
+<% if @a != nil && @a != "0" && @a != ""  %>
+<table border="0" style="width: 500px">
+  <tbody>
+    <tr>
+      <td>x<sub>1</sub> = </td>
+      <!-- Exibe a raiz x1 -->
+      <td><%= x1() %></td>
+    </tr>
+    <tr>
+      <td>x<sub>2</sub> = </td>
+      <!-- Exibe a raiz x2 -->
+      <td><%= x2() %></td>
+    </tr>
+  </tbody>
+</table>
+<% end %>
+<% end %>

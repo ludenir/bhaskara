@@ -1,0 +1,36 @@
+# gem install postgresql
+#
+#   gem 'postgresql'
+#
+development:
+  adapter: postgresql
+  encoding: utf8
+  database: development.postgres
+  host: localhost
+  port: 5432
+  username: postgres
+  password: Lpss1966
+  pool: 5
+ #timeout: 5000
+
+test:
+  adapter: postgresql
+  encoding: utf8
+  database: test.postgres
+  host: 127.0.0.1
+  username: postgres
+  password: Lpss1966
+  port: 5432
+  pool: 5
+ #timeout: 5000
+
+production:
+  adapter: postgresql
+  encoding: utf8
+  database: production.postgres
+  host: 127.0.0.1
+  username: postgres
+  password: Lpss1966
+  port: 5432
+  pool: 5
+ #timeout: 5000
