@@ -83,4 +83,9 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # Para exibir imagem de fundo
+  config.serve_static_assets = true
+  config.assets.compile = true
+
 end
