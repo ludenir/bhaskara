@@ -4,11 +4,6 @@
 <%= form_tag '', method: :get do %>
   <!-- Formulário Filtro -->
 <tr>
-<td width="150px"></td>
-<td><img src="http://www.intmath.com/cgi-bin/mathtex.cgi?ax^2+bx+c=0" width="150" height="20" alt="ax^2+bx+c=0" title="ax^2+bx+c=0" style="vertical-align:0px">
-</td>
-</tr>
-<tr>
 <td colspan="2"><strong>Informe os coeficientes:</strong></td>
 </tr>
 <tr>
@@ -26,13 +21,10 @@
 <tr height="45">
 <td width="150px"></td>
 <td> <input type="submit" name="commit" value="Calcular" class="pure-button pure-button-primary" data-disable-with="calcular" /></td>
-
-
 <script>
   document.getElementById("a").value = 1;
   document.getElementById("b").focus();
 </script>
-
 <% end %>
 </tr>
 </table>
