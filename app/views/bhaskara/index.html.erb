@@ -33,12 +33,12 @@
 
 <table>
 <tr>
-<td width="60px"><strong>Equação calculada:</strong></td>
+<td width="60px"><strong>Equação desejada:</strong></td>
 <td><img src="http://www.intmath.com/cgi-bin/mathtex.cgi?(<%= @a %>)x^2+(<%= @b %>)x+(<%= @c %>)=0" width="150" height="20" alt="ax^2+bx+c=0" title="ax^2+bx+c=0" style="vertical-align:0px">
 </td>
 </tr>
 <tr>
-<td colspan="2"><strong>Aplicado bhaskara:</strong></td>
+<td colspan="2"><strong>Aplica-se bhaskara...</strong></td>
 </tr>
 <tr>
 <td><img src="http://www.intmath.com/cgi-bin/mathtex.cgi?x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" width="160" height="37" alt="x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" title="x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" style="vertical-align:0px">
@@ -46,7 +46,8 @@
 </tr>
 <br>
 </table>
-<img src="http://www.intmath.com/cgi-bin/mathtex.cgi?x=\frac{-(<%= @b %>)\pm\sqrt{(<%= @b %>)^2-4(<%= @a %>)(<%= @c %>)}}{2(<%= @a %>)}" width="250" height="37" alt="x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" title="x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" style="vertical-align:0px">
+<img src="http://www.intmath.com/cgi-bin/mathtex.cgi?x=\frac{-(<%= @b %>)\pm\sqrt{(<%= @b %>)^2-4(<%= @a %>)(<%= @c %>)}}{2(<%= @a %>)}" width="250" height="37" alt="x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" title="x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" style="vertical-align:0px"><strong>.  Finalmente, tem-se:</strong>
+
 
 <% if @a != nil && @a != "0" && @a != ""  %>
 <table border="0" style="width: 500px">
