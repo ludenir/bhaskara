@@ -20,7 +20,7 @@
 </tr>
 <tr height="45">
 <td width="150px"></td>
-<td> <input type="submit" name="commit" value="Calcular" class="button button-inline button-small button-primary" data-disable-with="Calcular" /></td>
+<td> <input type="submit" name="commit" value="Calcular" class="button button-inline button-small button-primary" data-disable-with="Calculando..." /></td>
 <script>
   document.getElementById("a").value = 1;
   document.getElementById("b").focus();
@@ -33,12 +33,12 @@
 
 <table>
 <tr>
-<td width="60px"><strong>Resolvendo...</strong></td>
+<td width="60px"><strong>Equação calculada:</strong></td>
 <td><img src="http://www.intmath.com/cgi-bin/mathtex.cgi?(<%= @a %>)x^2+(<%= @b %>)x+(<%= @c %>)=0" width="150" height="20" alt="ax^2+bx+c=0" title="ax^2+bx+c=0" style="vertical-align:0px">
 </td>
 </tr>
 <tr>
-<td colspan="2"><strong>Aplicando bhaskara...</strong></td>
+<td colspan="2"><strong>Aplicado bhaskara:</strong></td>
 </tr>
 <tr>
 <td><img src="http://www.intmath.com/cgi-bin/mathtex.cgi?x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" width="160" height="37" alt="x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" title="x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" style="vertical-align:0px">
